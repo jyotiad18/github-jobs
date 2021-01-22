@@ -1,0 +1,182 @@
+.jobDetail {
+  display: flex;
+}
+
+.jobDetail__left,
+.jobDetail__right {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  gap: 36px;
+}
+
+.jobDetail__right {
+  flex: 0.7;
+}
+
+.left__back {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #1e86ff;
+}
+
+.left__back > span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.left__apply {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+  width: 231px;
+}
+
+.left__apply > span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #b9bdcf;
+}
+
+.left__apply > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #334680;
+  width: 100%;
+}
+
+.left__apply > h2 > span {
+  color: #1e86ff;
+  word-wrap: break-word;
+}
+
+.right__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.right__jobTitle {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.right__jobTitle > h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #334680;
+}
+
+.right__jobTitle > span {
+  border: 1px solid #334680;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+
+.right__publish {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #b7bcce;
+}
+
+.right__publish > span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.right__companyInfo {
+  display: flex;
+  gap: 12px;
+}
+
+.right__company {
+  display: flex;
+  flex-direction: column;
+}
+
+.right__company > h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #334680;
+}
+
+.right__jobdesc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #334680;
+}
+
+.company__logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  display: flex;
+}
+
+.company__logo > img {
+  width: 100%;
+  display: block;
+  margin: auto auto;
+}
+
+@media (max-width: 1024px) {
+  .jobDetail {
+    flex-direction: column;
+  }
+
+  .jobDetail__left,
+  .jobDetail__right {
+    flex: 1;
+  }
+
+  .left__apply {
+    width: 100%;
+  }
+}
+
+@media (max-width: 635px) {
+  .right__header {
+    gap: 10px;
+  }
+
+  .right__jobTitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .app {
+    padding: 5px;
+  }
+}

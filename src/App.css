@@ -1,0 +1,27 @@
+.app {
+  display: flex;
+  padding: 32px 120px;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 635px) {
+  .app {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .app {
+    padding: 5px;
+  }
+}

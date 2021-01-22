@@ -1,0 +1,32 @@
+.jobsMain {
+  display: flex;
+  gap: 32px;
+}
+
+.jobsMain__left {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  flex: 0.3;
+}
+
+.jobsMain__right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .jobsMain {
+    flex-direction: column;
+  }
+
+  .jobsMain__left {
+    flex: 1;
+  }
+
+  .jobsMain__right {
+    flex: 1;
+  }
+}

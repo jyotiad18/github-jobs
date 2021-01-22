@@ -1,0 +1,100 @@
+.job {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  gap: 16px;
+}
+
+.job__companylogo {
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  display: flex;
+}
+
+.job__companylogo > img {
+  width: 100%;
+  display: block;
+  margin: auto auto;
+}
+
+.job__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+.job__info > h2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+
+.job__info > h1 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #334680;
+}
+
+.job__typewithlocation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job__left {
+  display: flex;
+  flex: 1;
+}
+
+.job__type {
+  border: 1px solid #334680;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+
+.job__right {
+  display: flex;
+  gap: 29px;
+  color: #b9bdcf;
+}
+
+.right__info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.right__info > span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (max-width: 640px) {
+  .job__info > h1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .job__typewithlocation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job__right {
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
